@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+    <link href="style.css" rel="stylesheet"/>
+    <title>Grafos</title>
+    <script src="./js/cytoscape.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="nav-bar">
+        <div id="toolbar">
+          <p>Programa ruta mas corta</p>
+          <p>Informacion</p>
+        </div>
+      </div>
+      <div id="inputContent">
+        <div class="select">
+          <h3>Origen</h3>
+          <select id="origin">
+            <option value="Duitama">Duitama</option>
+            <option value="Sogamoso">Sogamoso</option>
+            <option value="Tibasosa">Tibasosa</option>
+            <option value="Paipa">Paipa</option>
+            <option value="Tunja">Tunja</option>
+            <option value="Santa Rosa">Santa Rosa</option>
+            <option value="Belencito">Belencito</option>
+            <option value="Corrales">Corrales</option>
+            <option value="Floresta">Floresta</option>
+            <option value="Morca">Morca</option>
+            <option value="Mongui">Mongui</option>
+            <option value="Mongua">Mongua</option>
+            <option value="Nobsa">Nobsa</option>
+          </select>
+        </div>
+        <div class="select">
+          <h3>Destino</h3>
+          <select id="destination">
+            <option value="Duitama">Duitama</option>
+            <option value="Sogamoso">Sogamoso</option>
+            <option value="Tibasosa">Tibasosa</option>
+            <option value="Paipa">Paipa</option>
+            <option value="Tunja">Tunja</option>
+            <option value="Santa Rosa">Santa Rosa</option>
+            <option value="Belencito">Belencito</option>
+            <option value="Corrales">Corrales</option>
+            <option value="Floresta">Floresta</option>
+            <option value="Morca">Morca</option>
+            <option value="Mongui">Mongui</option>
+            <option value="Mongua">Mongua</option>
+            <option value="Nobsa">Nobsa</option>
+          </select>
+        </div>
+        <button onclick="getRoute();">Calcular</button>
+      </div>
+      <div id="cy"></div>
+    </div>
+
+    <!-- Load application code at the end to ensure DOM is loaded -->
+    <script src="code.js"></script>
+  </body>
+</html>
