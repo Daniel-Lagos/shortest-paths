@@ -55,65 +55,214 @@ function getRoute() {
       ],
 
       edges: [
-        { data: { id: 'tp', weight: 1, source: 'Tunja', target: 'Paipa' } },
         {
           data: {
-            id: 'dt', weight: 3, source: 'Duitama', target: 'Tibasosa'
+            id: 'tunja-paipa', weight: 45.5, source: 'Tunja', target: 'Paipa'
           }
         },
         {
           data: {
-            id: 'ds', weight: 4, source: 'Duitama', target: 'Santa Rosa'
+            id: 'paipa-tunja', weight: 45.5, source: 'Paipa', target: 'Tunja'
           }
         },
         {
           data: {
-            id: 'ts', weight: 5, source: 'Tibasosa', target: 'Sogamoso'
-          }
-        },
-        { data: { id: 'ns', weight: 6, source: 'Nobsa', target: 'Sogamoso' } },
-        { data: { id: 'dn', weight: 2, source: 'Duitama', target: 'Nobsa' } },
-        { data: { id: 'sm', weight: 4, source: 'Sogamoso', target: 'Morca' } },
-        {
-          data: {
-            id: 'nb', weight: 21, source: 'Nobsa', target: 'Belencito'
-          }
-        },
-        { data: { id: 'si', weight: 12, source: 'Sogamoso', target: 'Iza' } },
-        { data: { id: 'mm', weight: 23, source: 'Morca', target: 'Mongui' } },
-        { data: { id: 'mma', weight: 25, source: 'Mongui', target: 'Mongua' } },
-        {
-          data: {
-            id: 'mmrca', weight: 42, source: 'Mongua', target: 'Morca'
+            id: 'paipa-duitama', weight: 13.4, source: 'Paipa',
+            target: 'Duitama'
           }
         },
         {
           data: {
-            id: 'mab', weight: 22, source: 'Mongua', target: 'Belencito'
+            id: 'duitama-paipa', weight: 13.4, source: 'Duitama',
+            target: 'Paipa'
           }
         },
         {
           data: {
-            id: 'mb', weight: 54, source: 'Mongui', target: 'Belencito'
+            id: 'duitama-nobsa', weight: 19.4, source: 'Duitama',
+            target: 'Nobsa'
           }
         },
         {
           data: {
-            id: 'bc', weight: 42, source: 'Belencito', target: 'Corrales'
+            id: 'nobsa-duitama', weight: 19.4, source: 'Nobsa',
+            target: 'Duitama'
           }
         },
         {
           data: {
-            id: 'cf', weight: 72, source: 'Corrales', target: 'Floresta'
+            id: 'duitama-santa-rosa', weight: 9.4, source: 'Duitama',
+            target: 'Santa Rosa'
           }
         },
         {
           data: {
-            id: 'fs', weight: 92, source: 'Floresta', target: 'Santa Rosa'
+            id: 'santa-rosa-duitama', weight: 9.4, source: 'Santa Rosa',
+            target: 'Duitama'
           }
         },
-        { data: { id: 'pd', weight: 17, source: 'Paipa', target: 'Duitama' } },
-        { data: { id: 'dp', weight: 17, source: 'Duitama', target: 'Paipa' } },
+        {
+          data: {
+            id: 'duitama-tibasosa', weight: 7.2, source: 'Duitama',
+            target: 'Tibasosa'
+          }
+        },
+        {
+          data: {
+            id: 'tibasosa-duitama', weight: 7.2, source: 'Tibasosa',
+            target: 'Duitama'
+          }
+        },
+        {
+          data: {
+            id: 'nobsa-belencito', weight: 9, source: 'Nobsa',
+            target: 'Belencito'
+          }
+        },
+        {
+          data: {
+            id: 'belencito-nobsa', weight: 9, source: 'Belencito',
+            target: 'Nobsa'
+          }
+        },
+        {
+          data: {
+            id: 'nobsa-sogamoso', weight: 15, source: 'Nobsa',
+            target: 'Sogamoso'
+          }
+        },
+        {
+          data: {
+            id: 'sogamoso-nobsa', weight: 15, source: 'Sogamoso',
+            target: 'Nobsa'
+          }
+        },
+        {
+          data: {
+            id: 'santa-rosa-floresta', weight: 39, source: 'Santa Rosa',
+            target: 'Floresta'
+          }
+        },
+        {
+          data: {
+            id: 'floresta-santa-rosa', weight: 39, source: 'Floresta',
+            target: 'Santa Rosa'
+          }
+        },
+        {
+          data: {
+            id: 'tibasosa-sogamoso', weight: 9, source: 'Tibasosa',
+            target: 'Sogamoso'
+          }
+        },
+        {
+          data: {
+            id: 'sogamoso-tibasosa', weight: 9, source: 'Sogamoso',
+            target: 'Tibasosa'
+          }
+        },
+        {
+          data: {
+            id: 'belencito-corrales', weight: 43, source: 'Belencito',
+            target: 'Corrales'
+          }
+        },
+        {
+          data: {
+            id: 'corrales-belencito', weight: 43, source: 'Corrales',
+            target: 'Belencito'
+          }
+        },
+        {
+          data: {
+            id: 'belencito-iza', weight: 25.3, source: 'Belencito',
+            target: 'Iza'
+          }
+        },
+        {
+          data: {
+            id: 'iza-belencito', weight: 25.3, source: 'Iza',
+            target: 'Belencito'
+          }
+        },
+        {
+          data: {
+            id: 'sogamoso-iza', weight: 6.3, source: 'Sogamoso', target: 'Iza'
+          }
+        },
+        {
+          data: {
+            id: 'iza-sogamoso', weight: 6.3, source: 'Iza', target: 'Sogamoso'
+          }
+        },
+        {
+          data: {
+            id: 'sogamoso-morca', weight: 16.6, source: 'Sogamoso',
+            target: 'Morca'
+          }
+        },
+        {
+          data: {
+            id: 'morca-sogamoso', weight: 16.6, source: 'Morca',
+            target: 'Sogamoso'
+          }
+        },
+        {
+          data: {
+            id: 'belencito-mongua', weight: 24.9, source: 'Belencito',
+            target: 'Mongua'
+          }
+        },
+        {
+          data: {
+            id: 'mongua-belencito', weight: 24.9, source: 'Mongua',
+            target: 'Belencito'
+          }
+        },
+        {
+          data: {
+            id: 'corrales-floresta', weight: 13, source: 'Corrales',
+            target: 'Floresta'
+          }
+        },
+        {
+          data: {
+            id: 'floresta-corrales', weight: 13, source: 'Floresta',
+            target: 'Corrales'
+          }
+        },
+        {
+          data: {
+            id: 'iza-mongui', weight: 19, source: 'Iza', target: 'Mongui'
+          }
+        },
+        {
+          data: {
+            id: 'mongui-iza', weight: 19, source: 'Mongui', target: 'Iza'
+          }
+        },
+        {
+          data: {
+            id: 'morca-mongui', weight: 11, source: 'Morca', target: 'Mongui'
+          }
+        },
+        {
+          data: {
+            id: 'mongui-morca', weight: 11, source: 'Mongui', target: 'Morca'
+          }
+        },
+        {
+          data: {
+            id: 'mongui-mongua', weight: 13.5, source: 'Mongui',
+            target: 'Mongua'
+          }
+        },
+        {
+          data: {
+            id: 'mongua-mongui', weight: 13.5, source: 'Mongua',
+            target: 'Mongui'
+          }
+        },
       ]
     },
 
@@ -131,7 +280,7 @@ function getRoute() {
 
   alert(`Total de kilometros : ${dijkstra.distanceTo(
     `#${nameCityDestination}`)} Km`);
-  alert(`El recorrido de ${root} a ${nameCityDestination} fue:${dijkstra.pathTo(
+  alert(`El recorrido de ${root} a ${nameCityDestination} fue: \n${dijkstra.pathTo(
     `#${nameCityDestination}`)
-    .map((element) => element._private.data.id)}`);
+    .map((element) => `${element._private.data.id} \n`)}`);
 };
