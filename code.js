@@ -7,6 +7,8 @@ function getRoute() {
   const indexDestination = destination.selectedIndex;
   const nameCityDestination = destination.options[indexDestination].text;
 
+  console.log(nameCityDestination,origin.options[indexOrigin].text);
+
   let root = origin.options[indexOrigin].text;
   let cy = cytoscape({
     container: document.getElementById('cy'),
@@ -43,7 +45,7 @@ function getRoute() {
         { data: { id: 'Tibasosa' } },
         { data: { id: 'Paipa' } },
         { data: { id: 'Tunja' } },
-        { data: { id: 'Santa Rosa' } },
+        { data: { id: 'Santa-Rosa' } },
         { data: { id: 'Belencito' } },
         { data: { id: 'Corrales' } },
         { data: { id: 'Floresta' } },
@@ -92,12 +94,12 @@ function getRoute() {
         {
           data: {
             id: 'duitama-santa-rosa', weight: 9.4, source: 'Duitama',
-            target: 'Santa Rosa'
+            target: 'Santa-Rosa'
           }
         },
         {
           data: {
-            id: 'santa-rosa-duitama', weight: 9.4, source: 'Santa Rosa',
+            id: 'santa-rosa-duitama', weight: 9.4, source: 'Santa-Rosa',
             target: 'Duitama'
           }
         },
@@ -139,14 +141,14 @@ function getRoute() {
         },
         {
           data: {
-            id: 'santa-rosa-floresta', weight: 39, source: 'Santa Rosa',
+            id: 'santa-rosa-floresta', weight: 39, source: 'Santa-Rosa',
             target: 'Floresta'
           }
         },
         {
           data: {
             id: 'floresta-santa-rosa', weight: 39, source: 'Floresta',
-            target: 'Santa Rosa'
+            target: 'Santa-Rosa'
           }
         },
         {
